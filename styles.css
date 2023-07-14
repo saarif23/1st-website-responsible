@@ -1,0 +1,263 @@
+/* common Share style*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-orange {
+    color: #FD6E0A;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 36px;
+}
+
+
+/* nave related style*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474747;
+}
+
+/* header related style */
+.header {
+    background-color: #f1d5c1;
+    background-image: url(./images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 0;
+}
+
+.banner {
+    padding: 30px 30px 0px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-hi {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.banner-title {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.banner-description {
+    font-style: none;
+}
+
+.profile-picture {
+    width: 584px;
+    height: 676px;
+
+}
+
+/* main section style */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section style */
+
+.about-section {
+    padding: 130px 130px;
+    margin: 100px 10px;
+    border-radius: 10px;
+    background: #f1d5c1;
+}
+
+
+
+
+.about-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.info-title {
+    color: #757575;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.info-description {
+    margin: 0;
+    padding: 0;
+}
+
+/* what i do section */
+.what-i-do-section {
+    text-align: center;
+
+}
+
+.title-primary {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#what-i-do-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.skill-container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+
+}
+
+.skill {
+    border-radius: 5px;
+    background: #f1d5c1;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    margin: 20px 10px 50px 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 300px;
+}
+
+.skill-title {
+    font-size: 20px;
+}
+
+.skill_description {
+    color: #757575;
+}
+
+.resume-container {
+    display: flex;
+    gap: 80px;
+}
+
+.resume-column-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.resume-item-institute {
+    color: var(--dark-03, #757575);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resume-item-description {
+    color: var(--dark-03, #757575);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+#btn {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+footer {
+    background: #f1d5c1;
+    display: flex;
+
+    padding: 130px 230px;
+    margin: 0 auto;  
+    gap: 20px;  
+}
+
+
+
+.footer-column {
+    width: 100%;
+    /* text-align: left; */
+    /* padding-left: 230px; */
+}
+
+input,
+textarea {
+   
+    margin: 25px;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #FFF;
+    width: 80%;
+   
+}
+.hide{
+    display: none;
+}
+/* Media quari for small layout */
+@media screen and (max-width: 576px) {
+
+    .skill-container, .resume-container{
+        flex-direction: column;
+    }
+    .resume-container{
+        padding: 5px;
+    }
+    footer{
+        flex-direction: column;
+        margin: 0 auto;
+       padding: 5px;
+       
+       
+    }
+}
